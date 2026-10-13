@@ -1,0 +1,212 @@
+
+/* ===== 科技风：全局配色 ===== */
+:root {
+  --global-font-color: #d8e4f5;
+  --card-bg: rgba(12, 24, 45, 0.88);
+  --blue: #35c9ff;
+  --purple: #8b7bff;
+}
+
+/* 页面背景：深蓝渐变 */
+body {
+  background-color: #07111f;
+  background-image:
+    radial-gradient(circle at 15% 20%, rgba(53, 201, 255, 0.12), transparent 32%),
+    radial-gradient(circle at 85% 70%, rgba(139, 123, 255, 0.12), transparent 35%),
+    linear-gradient(135deg, #07111f, #0b1730 55%, #10152c);
+  background-attachment: fixed;
+}
+
+/* 文章卡片：半透明深色 */
+#recent-posts > .recent-post-item,
+.layout > div:first-child:not(.recent-posts),
+#aside-content .card-widget {
+  background: rgba(12, 24, 45, 0.88);
+  border: 1px solid rgba(53, 201, 255, 0.16);
+  border-radius: 14px;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.18);
+  backdrop-filter: blur(10px);
+}
+
+/* 鼠标悬停：蓝色微光 */
+#recent-posts > .recent-post-item,
+#aside-content .card-widget {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+#recent-posts > .recent-post-item:hover,
+#aside-content .card-widget:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 32px rgba(53, 201, 255, 0.13);
+}
+
+/* 链接：科技蓝 */
+a {
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--blue) !important;
+}
+
+/* 选中文字的颜色 */
+::selection {
+  background: rgba(53, 201, 255, 0.35);
+  color: #fff;
+}
+
+/* ===== 科技风：导航栏 ===== */
+#nav {
+  background: rgba(7, 17, 31, 0.82) !important;
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(53, 201, 255, 0.2);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.12);
+}
+
+/* 网站标题 */
+#site-name {
+  color: #e4f5ff !important;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-shadow: 0 0 12px rgba(53, 201, 255, 0.25);
+}
+
+/* 导航链接 */
+#nav a {
+  transition: color 0.25s ease, text-shadow 0.25s ease;
+}
+
+#nav a:hover {
+  color: #35c9ff !important;
+  text-shadow: 0 0 12px rgba(53, 201, 255, 0.65);
+}
+
+/* 通用按钮：圆角与渐变 */
+button,
+.button,
+#pagination a {
+  border-radius: 8px;
+  transition: all 0.25s ease;
+}
+
+.button:hover,
+#pagination a:hover {
+  box-shadow: 0 0 18px rgba(53, 201, 255, 0.25);
+}
+
+/* 文章标题：鼠标悬停时发光 */
+#recent-posts .post-title a:hover {
+  color: #35c9ff !important;
+  text-shadow: 0 0 14px rgba(53, 201, 255, 0.35);
+}
+
+/* 页面滚动条 */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(#35c9ff, #8b7bff);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #07111f;
+}
+/* 临时测试：确认自定义 CSS 是否生效 */
+body {
+  outline: 6px solid red !important;
+}
+/* ===== 科技风 2.0：全局背景 ===== */
+
+/* 页面基础背景 */
+body {
+  background: #07111f !important;
+  color: #d8e7fa;
+}
+
+/* Butterfly 的全屏背景层 */
+#web_bg {
+  background:
+    radial-gradient(ellipse at 15% 20%, rgba(0, 195, 255, 0.24), transparent 38%),
+    radial-gradient(ellipse at 85% 65%, rgba(139, 92, 246, 0.22), transparent 40%),
+    linear-gradient(135deg, #050b16 0%, #0b1930 48%, #17112e 100%) !important;
+  background-attachment: fixed !important;
+}
+
+/* 顶部横幅：深蓝紫渐变 */
+#page-header {
+  background:
+    radial-gradient(ellipse at 25% 35%, rgba(0, 195, 255, 0.25), transparent 42%),
+    linear-gradient(120deg, #07111f 0%, #102a4a 55%, #261747 100%) !important;
+}
+
+/* 首页文章卡片：玻璃质感 */
+#recent-posts > .recent-post-item {
+  background: rgba(10, 24, 44, 0.82) !important;
+  border: 1px solid rgba(76, 201, 255, 0.28);
+  border-radius: 18px;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  overflow: hidden;
+  transition: transform 0.28s ease, border-color 0.28s ease,
+              box-shadow 0.28s ease;
+}
+
+/* 鼠标悬停：卡片上浮、蓝色发光 */
+#recent-posts > .recent-post-item:hover {
+  transform: translateY(-6px);
+  border-color: rgba(76, 201, 255, 0.72);
+  box-shadow: 0 16px 42px rgba(0, 180, 255, 0.16);
+}
+
+/* 侧边栏卡片 */
+#aside-content .card-widget {
+  background: rgba(10, 24, 44, 0.82) !important;
+  border: 1px solid rgba(76, 201, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+/* 导航栏：半透明深色 */
+#nav {
+  background: rgba(5, 12, 25, 0.86) !important;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(76, 201, 255, 0.22);
+}
+
+/* 文字与链接 */
+#site-name,
+#page-header #site-title,
+#page-header #site-subtitle {
+  color: #eff8ff !important;
+  text-shadow: 0 0 18px rgba(0, 195, 255, 0.24);
+}
+
+a:hover {
+  color: #4cc9ff !important;
+}
+
+/* 滚动条 */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #35c9ff, #8b5cf6);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #07111f;
+}
+
+/* 文字选中颜色 */
+::selection {
+  background: rgba(53, 201, 255, 0.4);
+  color: #fff;
+}
